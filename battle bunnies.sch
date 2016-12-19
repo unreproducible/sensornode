@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6213,12 +6213,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="U$62" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$63" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$69" library="microbuilder" deviceset="GND" device=""/>
-<part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="R19" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="U$70" library="microbuilder" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="10UF10V10%(0805)" device="" value="10uF"/>
 <part name="R20" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
@@ -6254,8 +6248,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X15" device=""/>
 <part name="U$35" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="RN1" library="resistor-dil" deviceset="8R-N" device="EXB2HV" value="220"/>
 <part name="RN2" library="resistor-dil" deviceset="8R-N" device="EXB2HV"/>
-<part name="RN1" library="resistor-dil" deviceset="8R-N" device="EXB2HV"/>
+<part name="RN3" library="resistor-dil" deviceset="8R-N" device="EXB2HV"/>
 </parts>
 <sheets>
 <sheet>
@@ -6420,12 +6415,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <instance part="U$62" gate="G$1" x="325.12" y="162.56"/>
 <instance part="U$63" gate="G$1" x="325.12" y="142.24"/>
 <instance part="U$69" gate="G$1" x="309.88" y="134.62"/>
-<instance part="R11" gate="G$1" x="299.72" y="144.78" rot="R180"/>
-<instance part="R13" gate="G$1" x="299.72" y="152.4" rot="R180"/>
-<instance part="R14" gate="G$1" x="299.72" y="160.02" rot="R180"/>
-<instance part="R17" gate="G$1" x="299.72" y="167.64" rot="R180"/>
-<instance part="R18" gate="G$1" x="299.72" y="175.26" rot="R180"/>
-<instance part="R19" gate="G$1" x="299.72" y="182.88" rot="R180"/>
 <instance part="U$70" gate="G$1" x="320.04" y="170.18"/>
 <instance part="C1" gate="G$1" x="320.04" y="177.8"/>
 <instance part="R20" gate="G$1" x="327.66" y="195.58" rot="R90"/>
@@ -6461,14 +6450,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <instance part="JP4" gate="A" x="233.68" y="160.02"/>
 <instance part="U$35" gate="G$1" x="160.02" y="180.34"/>
 <instance part="GND7" gate="1" x="187.96" y="162.56"/>
-<instance part="RN2" gate="A" x="355.6" y="55.88"/>
-<instance part="RN2" gate="B" x="355.6" y="66.04"/>
-<instance part="RN2" gate="C" x="355.6" y="76.2"/>
-<instance part="RN2" gate="D" x="355.6" y="86.36"/>
-<instance part="RN2" gate="E" x="355.6" y="96.52"/>
-<instance part="RN2" gate="F" x="355.6" y="106.68"/>
-<instance part="RN2" gate="G" x="355.6" y="116.84"/>
-<instance part="RN2" gate="H" x="355.6" y="127"/>
 <instance part="RN1" gate="A" x="294.64" y="55.88"/>
 <instance part="RN1" gate="B" x="294.64" y="66.04"/>
 <instance part="RN1" gate="C" x="294.64" y="76.2"/>
@@ -6477,6 +6458,22 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <instance part="RN1" gate="F" x="294.64" y="106.68"/>
 <instance part="RN1" gate="G" x="294.64" y="116.84"/>
 <instance part="RN1" gate="H" x="294.64" y="127"/>
+<instance part="RN2" gate="A" x="368.3" y="104.14"/>
+<instance part="RN2" gate="B" x="368.3" y="99.06"/>
+<instance part="RN2" gate="C" x="368.3" y="93.98"/>
+<instance part="RN2" gate="D" x="368.3" y="88.9"/>
+<instance part="RN2" gate="E" x="368.3" y="83.82"/>
+<instance part="RN2" gate="F" x="368.3" y="78.74"/>
+<instance part="RN2" gate="G" x="355.6" y="116.84"/>
+<instance part="RN2" gate="H" x="355.6" y="127"/>
+<instance part="RN3" gate="A" x="299.72" y="152.4"/>
+<instance part="RN3" gate="B" x="299.72" y="160.02"/>
+<instance part="RN3" gate="C" x="299.72" y="167.64"/>
+<instance part="RN3" gate="D" x="299.72" y="175.26"/>
+<instance part="RN3" gate="E" x="299.72" y="182.88"/>
+<instance part="RN3" gate="F" x="299.72" y="144.78"/>
+<instance part="RN3" gate="G" x="264.16" y="124.46"/>
+<instance part="RN3" gate="H" x="264.16" y="119.38"/>
 </instances>
 <busses>
 </busses>
@@ -6593,9 +6590,7 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="304.8" y1="182.88" x2="309.88" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="182.88" x2="309.88" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="1"/>
 <pinref part="U$69" gate="G$1" pin="GND"/>
-<pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="309.88" y1="175.26" x2="309.88" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="167.64" x2="309.88" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="160.02" x2="309.88" y2="152.4" width="0.1524" layer="91"/>
@@ -6603,18 +6598,20 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <wire x1="309.88" y1="144.78" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="175.26" x2="309.88" y2="175.26" width="0.1524" layer="91"/>
 <junction x="309.88" y="175.26"/>
-<pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="167.64" x2="309.88" y2="167.64" width="0.1524" layer="91"/>
 <junction x="309.88" y="167.64"/>
-<pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="160.02" x2="309.88" y2="160.02" width="0.1524" layer="91"/>
 <junction x="309.88" y="160.02"/>
-<pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="152.4" x2="309.88" y2="152.4" width="0.1524" layer="91"/>
 <junction x="309.88" y="152.4"/>
-<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="144.78" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
 <junction x="309.88" y="144.78"/>
+<pinref part="RN3" gate="F" pin="2"/>
+<pinref part="RN3" gate="A" pin="2"/>
+<pinref part="RN3" gate="B" pin="2"/>
+<pinref part="RN3" gate="C" pin="2"/>
+<pinref part="RN3" gate="D" pin="2"/>
+<pinref part="RN3" gate="E" pin="2"/>
 </segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
@@ -7215,6 +7212,11 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <label x="154.94" y="160.02" size="1.778" layer="95"/>
 <pinref part="JP2" gate="A" pin="6"/>
 </segment>
+<segment>
+<wire x1="172.72" y1="63.5" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
+<label x="177.8" y="63.5" size="1.778" layer="95"/>
+<pinref part="S2" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="GPIO12/MISO" class="0">
 <segment>
@@ -7426,7 +7428,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="350.52" y1="106.68" x2="342.9" y2="106.68" width="0.1524" layer="91"/>
 <label x="342.9" y="106.68" size="1.778" layer="95"/>
-<pinref part="RN2" gate="F" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="13"/>
@@ -7443,7 +7444,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="350.52" y1="96.52" x2="342.9" y2="96.52" width="0.1524" layer="91"/>
 <label x="342.9" y="96.52" size="1.778" layer="95"/>
-<pinref part="RN2" gate="E" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="14"/>
@@ -7460,7 +7460,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="350.52" y1="86.36" x2="342.9" y2="86.36" width="0.1524" layer="91"/>
 <label x="342.9" y="86.36" size="1.778" layer="95"/>
-<pinref part="RN2" gate="D" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="15"/>
@@ -7477,7 +7476,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="350.52" y1="76.2" x2="342.9" y2="76.2" width="0.1524" layer="91"/>
 <label x="342.9" y="76.2" size="1.778" layer="95"/>
-<pinref part="RN2" gate="C" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="13"/>
@@ -7494,7 +7492,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="350.52" y1="66.04" x2="342.9" y2="66.04" width="0.1524" layer="91"/>
 <label x="342.9" y="66.04" size="1.778" layer="95"/>
-<pinref part="RN2" gate="B" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="14"/>
@@ -7511,7 +7508,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="350.52" y1="55.88" x2="342.9" y2="55.88" width="0.1524" layer="91"/>
 <label x="342.9" y="55.88" size="1.778" layer="95"/>
-<pinref part="RN2" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="15"/>
@@ -7528,7 +7524,7 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="287.02" y1="182.88" x2="294.64" y2="182.88" width="0.1524" layer="91"/>
 <label x="289.56" y="185.42" size="1.778" layer="95"/>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="RN3" gate="E" pin="1"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -7540,7 +7536,7 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="287.02" y1="175.26" x2="294.64" y2="175.26" width="0.1524" layer="91"/>
 <label x="289.56" y="177.8" size="1.778" layer="95"/>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="RN3" gate="D" pin="1"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -7552,7 +7548,7 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="287.02" y1="167.64" x2="294.64" y2="167.64" width="0.1524" layer="91"/>
 <label x="289.56" y="170.18" size="1.778" layer="95"/>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="RN3" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="A3" class="0">
@@ -7564,7 +7560,7 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="287.02" y1="160.02" x2="294.64" y2="160.02" width="0.1524" layer="91"/>
 <label x="289.56" y="162.56" size="1.778" layer="95"/>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="RN3" gate="B" pin="1"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -7576,7 +7572,7 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="287.02" y1="152.4" x2="294.64" y2="152.4" width="0.1524" layer="91"/>
 <label x="289.56" y="154.94" size="1.778" layer="95"/>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="RN3" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -7588,7 +7584,7 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="289.56" y1="144.78" x2="294.64" y2="144.78" width="0.1524" layer="91"/>
 <label x="289.56" y="147.32" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="RN3" gate="F" pin="1"/>
 </segment>
 </net>
 <net name="OE" class="0">
@@ -7682,13 +7678,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <pinref part="D6" gate="G$1" pin="C"/>
 <wire x1="213.36" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
 <label x="218.44" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO13" class="0">
-<segment>
-<wire x1="172.72" y1="63.5" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
-<label x="177.8" y="63.5" size="1.778" layer="95"/>
-<pinref part="S2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="CS" class="0">
