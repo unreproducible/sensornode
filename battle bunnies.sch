@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6940,9 +6940,9 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <pinref part="Q1" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="4"/>
-<wire x1="177.8" y1="165.1" x2="154.94" y2="165.1" width="0.1524" layer="91"/>
-<label x="154.94" y="165.1" size="1.778" layer="95"/>
+<wire x1="177.8" y1="162.56" x2="154.94" y2="162.56" width="0.1524" layer="91"/>
+<label x="154.94" y="162.56" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="ADC" class="0">
@@ -7025,9 +7025,9 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <pinref part="Q2" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<wire x1="177.8" y1="154.94" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
-<label x="154.94" y="154.94" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="8"/>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="177.8" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
+<label x="154.94" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -7195,9 +7195,9 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <label x="99.06" y="180.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
-<label x="154.94" y="149.86" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="10"/>
+<wire x1="177.8" y1="165.1" x2="154.94" y2="165.1" width="0.1524" layer="91"/>
+<label x="154.94" y="165.1" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="GPIO14/SCK" class="0">
@@ -7247,14 +7247,14 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <label x="2.54" y="182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="162.56" x2="177.8" y2="162.56" width="0.1524" layer="91"/>
-<label x="154.94" y="162.56" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="5"/>
-</segment>
-<segment>
 <pinref part="D6" gate="G$1" pin="C"/>
 <wire x1="213.36" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
 <label x="218.44" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="12"/>
+<wire x1="177.8" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
+<label x="154.94" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_RX" class="0">
