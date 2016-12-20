@@ -7162,14 +7162,25 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 </net>
 <net name="GPIO4/SDA" class="0">
 <segment>
-<wire x1="154.94" y1="144.78" x2="177.8" y2="144.78" width="0.1524" layer="91"/>
-<label x="154.94" y="144.78" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="12"/>
-</segment>
-<segment>
 <pinref part="X2" gate="G$1" pin="GPIO4"/>
 <wire x1="55.88" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
 <label x="60.96" y="187.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="264.16" y1="167.64" x2="264.16" y2="170.18" width="0.1524" layer="91"/>
+<label x="266.7" y="167.64" size="1.778" layer="95"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="264.16" y1="167.64" x2="274.32" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="340.36" y1="180.34" x2="330.2" y2="180.34" width="0.1524" layer="91"/>
+<label x="330.2" y="180.34" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="SDA"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="7"/>
+<wire x1="231.14" y1="162.56" x2="205.74" y2="162.56" width="0.1524" layer="91"/>
+<label x="205.74" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -7196,9 +7207,20 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <label x="2.54" y="185.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="231.14" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
-<label x="205.74" y="170.18" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="4"/>
+<wire x1="274.32" y1="165.1" x2="256.54" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="165.1" x2="256.54" y2="170.18" width="0.1524" layer="91"/>
+<label x="266.7" y="165.1" size="1.778" layer="95"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="340.36" y1="177.8" x2="330.2" y2="177.8" width="0.1524" layer="91"/>
+<label x="330.2" y="177.8" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="SCL"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="6"/>
+<wire x1="231.14" y1="165.1" x2="205.74" y2="165.1" width="0.1524" layer="91"/>
+<label x="205.74" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO13/MOSI" class="0">
@@ -7229,6 +7251,11 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <label x="154.94" y="162.56" size="1.778" layer="95"/>
 <pinref part="JP2" gate="A" pin="5"/>
 </segment>
+<segment>
+<pinref part="D6" gate="G$1" pin="C"/>
+<wire x1="213.36" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
+<label x="218.44" y="116.84" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="USB_RX" class="0">
 <segment>
@@ -7253,52 +7280,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <segment>
 <wire x1="68.58" y1="241.3" x2="73.66" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="GPIO10" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="GPIO10"/>
-<wire x1="35.56" y1="162.56" x2="35.56" y2="152.4" width="0.1524" layer="91"/>
-<label x="35.56" y="152.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="274.32" y1="165.1" x2="256.54" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="165.1" x2="256.54" y2="170.18" width="0.1524" layer="91"/>
-<label x="266.7" y="165.1" size="1.778" layer="95"/>
-<pinref part="R22" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="340.36" y1="177.8" x2="330.2" y2="177.8" width="0.1524" layer="91"/>
-<label x="330.2" y="177.8" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="SCL"/>
-</segment>
-<segment>
-<wire x1="231.14" y1="165.1" x2="205.74" y2="165.1" width="0.1524" layer="91"/>
-<label x="205.74" y="165.1" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="6"/>
-</segment>
-</net>
-<net name="GPIO9" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="GPIO9"/>
-<wire x1="45.72" y1="162.56" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
-<label x="45.72" y="152.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="264.16" y1="167.64" x2="264.16" y2="170.18" width="0.1524" layer="91"/>
-<label x="266.7" y="167.64" size="1.778" layer="95"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="264.16" y1="167.64" x2="274.32" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="340.36" y1="180.34" x2="330.2" y2="180.34" width="0.1524" layer="91"/>
-<label x="330.2" y="180.34" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="SDA"/>
-</segment>
-<segment>
-<wire x1="231.14" y1="162.56" x2="205.74" y2="162.56" width="0.1524" layer="91"/>
-<label x="205.74" y="162.56" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="PWM0" class="0">
@@ -7671,61 +7652,6 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html#i2c-bus</te
 <pinref part="R23" gate="G$1" pin="1"/>
 <pinref part="D6" gate="G$1" pin="A"/>
 <wire x1="200.66" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GPIO12" class="0">
-<segment>
-<pinref part="D6" gate="G$1" pin="C"/>
-<wire x1="213.36" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
-<label x="218.44" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CS" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="CS"/>
-<wire x1="30.48" y1="162.56" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
-<label x="30.48" y="152.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="177.8" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
-<label x="154.94" y="167.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DO" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="DO"/>
-<wire x1="33.02" y1="162.56" x2="33.02" y2="152.4" width="0.1524" layer="91"/>
-<label x="33.02" y="152.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="JP4" gate="A" pin="3"/>
-<wire x1="231.14" y1="172.72" x2="205.74" y2="172.72" width="0.1524" layer="91"/>
-<label x="205.74" y="172.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CLK" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="CLK"/>
-<wire x1="40.64" y1="162.56" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
-<label x="40.64" y="152.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="231.14" y1="152.4" x2="205.74" y2="152.4" width="0.1524" layer="91"/>
-<label x="205.74" y="152.4" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="11"/>
-</segment>
-</net>
-<net name="DI" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="DI"/>
-<wire x1="43.18" y1="162.56" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
-<label x="43.18" y="152.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="231.14" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
-<label x="205.74" y="149.86" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="12"/>
 </segment>
 </net>
 </nets>
