@@ -415,7 +415,7 @@
 <wire x1="0.48115" y1="34.719340625" x2="0.757" y2="32.7676" width="0.025" layer="20"/>
 <wire x1="0.757" y1="32.7676" x2="1.1207" y2="30.82978125" width="0.025" layer="20"/>
 <wire x1="1.1207" y1="30.82978125" x2="1.58071875" y2="28.9129" width="0.025" layer="20"/>
-<text x="20.47875" y="78.4225" size="1.016" layer="21" font="vector" rot="SR180">Pwr On</text>
+<text x="21.21535" y="78.5241" size="1.016" layer="21" font="vector" rot="SR180">Pwr On</text>
 <rectangle x1="22.63648125" y1="-0.03175" x2="23.27401875" y2="0.03175" layer="201"/>
 <rectangle x1="22.44851875" y1="0.03175" x2="23.58898125" y2="0.09525" layer="201"/>
 <rectangle x1="22.25548125" y1="0.09525" x2="23.78201875" y2="0.15875" layer="201"/>
@@ -8363,6 +8363,26 @@
 <rectangle x1="136.81201875" y1="95.15475" x2="144.81048125" y2="95.21825" layer="201"/>
 <rectangle x1="137.82801875" y1="95.21825" x2="144.04848125" y2="95.28175" layer="201"/>
 <rectangle x1="139.28598125" y1="95.28175" x2="142.84451875" y2="95.34525" layer="201"/>
+<text x="68.58" y="52.07" size="1.016" layer="22" rot="MR90">(C) John 'Warthog9' Hawley 2016
+CC-BY-SA
+
+Artwork by Dr. Terri Oda</text>
+<text x="80.01" y="83.82" size="2.54" layer="22" rot="MR270">Battle Bunnies v0.9</text>
+<text x="53.34" y="77.47" size="1.016" layer="22" rot="MR270">This is intended as a fun badge toy to play with.
+It was designed for PyCon Pune India, February 2017.
+
+Go, play with others and see what comes of it!
+
+- John &amp; Terri</text>
+<text x="116.84" y="76.2" size="1.016" layer="21" rot="SR270">Health</text>
+<text x="116.84" y="58.42" size="1.016" layer="21" rot="SR270">Level</text>
+<text x="45.72" y="34.29" size="1.016" layer="21" rot="R45">Magic</text>
+<text x="38.1" y="25.4" size="1.016" layer="21" rot="R45">Battle!</text>
+<text x="20.32" y="80.01" size="1.016" layer="21">Reset</text>
+<text x="24.3332" y="10.9982" size="1.016" layer="21">Chg</text>
+<text x="7.62" y="25.4" size="0.8128" layer="21" rot="SR270">TX</text>
+<text x="7.62" y="21.59" size="0.8128" layer="21" rot="SR270">Rx</text>
+<text x="20.5486" y="81.3562" size="0.8128" layer="21">GPIO0 LED</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -9369,67 +9389,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 </package>
 </packages>
 </library>
-<library name="Warthog9-Batteries">
-<packages>
-<package name="AAA3">
-<description>This is modeled after a keystone 2479 holder</description>
-<wire x1="-26.3144" y1="18.7452" x2="26.3144" y2="18.7452" width="0.127" layer="21"/>
-<wire x1="-26.3144" y1="18.7452" x2="-26.3144" y2="-18.7452" width="0.127" layer="21"/>
-<wire x1="26.3144" y1="18.7452" x2="26.3144" y2="-18.7452" width="0.127" layer="21"/>
-<wire x1="-26.3144" y1="-18.7452" x2="26.3144" y2="-18.7452" width="0.127" layer="21"/>
-<hole x="0" y="11.7475" drill="3.4544"/>
-<hole x="0" y="-11.7475" drill="3.4544"/>
-<pad name="NEG" x="23.7236" y="0" drill="1.0287" shape="long" rot="R90"/>
-<pad name="POS" x="23.7236" y="-12.7" drill="1.0287" shape="long" rot="R90"/>
-<wire x1="-7.62" y1="13.97" x2="-7.62" y2="8.89" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="8.89" x2="7.62" y2="8.89" width="0.127" layer="21"/>
-<wire x1="7.62" y1="8.89" x2="7.62" y2="10.16" width="0.127" layer="21"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="12.7" width="0.127" layer="21"/>
-<wire x1="7.62" y1="12.7" x2="7.62" y2="13.97" width="0.127" layer="21"/>
-<wire x1="7.62" y1="13.97" x2="-7.62" y2="13.97" width="0.127" layer="21"/>
-<wire x1="7.62" y1="12.7" x2="8.89" y2="12.7" width="0.127" layer="21"/>
-<wire x1="8.89" y1="12.7" x2="8.89" y2="10.16" width="0.127" layer="21"/>
-<wire x1="8.89" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="21"/>
-<wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="2.54" x2="-7.62" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="1.27" x2="-7.62" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="1.27" x2="-8.89" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="1.27" x2="-8.89" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="-1.27" x2="-7.62" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-8.89" x2="7.62" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="-13.97" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-13.97" x2="-7.62" y2="-13.97" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-13.97" x2="-7.62" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-8.89" x2="7.62" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-10.16" x2="8.89" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-10.16" x2="8.89" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-12.7" x2="7.62" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="10.16" y1="11.43" x2="10.795" y2="11.43" width="0.127" layer="21"/>
-<wire x1="10.795" y1="11.43" x2="10.795" y2="12.065" width="0.127" layer="21"/>
-<wire x1="10.795" y1="11.43" x2="11.43" y2="11.43" width="0.127" layer="21"/>
-<wire x1="10.795" y1="11.43" x2="10.795" y2="10.795" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="11.43" x2="-10.16" y2="11.43" width="0.127" layer="21"/>
-<wire x1="8.89" y1="0" x2="10.16" y2="0" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="0" x2="-11.43" y2="0" width="0.127" layer="21"/>
-<wire x1="-10.795" y1="0.635" x2="-10.795" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="-11.43" x2="-10.16" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-11.43" x2="11.43" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="10.795" y1="-10.795" x2="10.795" y2="-12.065" width="0.127" layer="21"/>
-<wire x1="21.59" y1="-12.065" x2="21.59" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="21.59" y1="-12.7" x2="21.59" y2="-13.335" width="0.127" layer="21"/>
-<wire x1="22.225" y1="-12.7" x2="21.59" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="21.59" y1="-12.7" x2="20.955" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="20.955" y1="0" x2="22.225" y2="0" width="0.127" layer="21"/>
-<wire x1="20.955" y1="0" x2="22.225" y2="0" width="0.127" layer="22"/>
-<wire x1="21.59" y1="-12.065" x2="21.59" y2="-13.335" width="0.127" layer="22"/>
-<wire x1="20.955" y1="-12.7" x2="22.225" y2="-12.7" width="0.127" layer="22"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9735,7 +9694,6 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="89.8525" y="69.215" size="0.17018125" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="89.8525" y="69.215" size="0.17018125" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="U$17" library="Warthog9-Batteries" package="AAA3" value="AAA3" x="25.7175" y="43.4975" rot="MR270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -10902,12 +10860,6 @@ design rules under a new name.</description>
 <contactref element="D6" pad="A"/>
 <wire x1="4.7625" y1="62.865" x2="4.7625" y2="60.2225" width="0.4064" layer="16"/>
 </signal>
-<signal name="-">
-<contactref element="U$17" pad="NEG"/>
-</signal>
-<signal name="+">
-<contactref element="U$17" pad="POS"/>
-</signal>
 </signals>
 <errors>
 <approved hash="18,29,f904cd96f6956dc6"/>
@@ -11298,4 +11250,10 @@ design rules under a new name.</description>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
