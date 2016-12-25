@@ -6249,8 +6249,8 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="U$35" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="RN1" library="resistor-dil" deviceset="8R-N" device="EXB2HV" value="220"/>
-<part name="RN2" library="resistor-dil" deviceset="8R-N" device="EXB2HV"/>
-<part name="RN3" library="resistor-dil" deviceset="8R-N" device="EXB2HV"/>
+<part name="RN2" library="resistor-dil" deviceset="8R-N" device="EXB2HV" value="220"/>
+<part name="RN3" library="resistor-dil" deviceset="8R-N" device="EXB2HV" value="10K"/>
 </parts>
 <sheets>
 <sheet>
