@@ -98,6 +98,7 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="2" fill="9" visible="no" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -1817,17 +1818,6 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <rectangle x1="-1" y1="-0.65" x2="-0.4168" y2="0.65" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
-<package name="0805-NO@1">
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<smd name="1" x="-0.95" y="0" dx="1.24" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.24" dy="1.5" layer="1"/>
-<text x="2.032" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="2.032" y="-0.762" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.3048" layer="21"/>
-</package>
 <package name="0805_10MGAP">
 <wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
@@ -1853,22 +1843,6 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="0603-NO@1">
-<wire x1="-1.473" y1="0.729" x2="1.473" y2="0.729" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.729" x2="1.473" y2="-0.729" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.729" x2="-1.473" y2="0.729" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.075" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.075" dy="1" layer="1"/>
-<text x="1.778" y="-0.127" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="1.778" y="-0.762" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<wire x1="0" y1="0.4" x2="0" y2="-0.4" width="0.3048" layer="21"/>
 </package>
 <package name="_1206">
 <wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1016" layer="51"/>
@@ -3983,7 +3957,7 @@ Op. Temp: -40~85°C</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0805-NOOUTLINE" package="0805-NO@1">
+<device name="0805-NOOUTLINE" package="0805-NO">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -4001,7 +3975,7 @@ Op. Temp: -40~85°C</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0603_NO" package="0603-NO@1">
+<device name="0603_NO" package="0603-NO">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6020,106 +5994,6 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Jumpers">
-<description>&lt;h3&gt;SparkFun Jumpers&lt;/h3&gt;
-In this library you'll find jumpers, or other semipermanent means of changing current paths. The least permanent form is the solder jumper. These can be changed by adding, removing, or moving solder. In cases that are less likely to be changed we have jumpers that are connected with traces. These can be cut with a razor, or reconnected with solder. Reference designator JP.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="SMT-JUMPER_2_NC_TRACE_SILK">
-<wire x1="0.762" y1="-1.016" x2="-0.762" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="1.016" x2="1.2192" y2="0.5588" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.2192" y1="0.5588" x2="-0.762" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.2192" y1="-0.5588" x2="-0.762" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.762" y1="-1.016" x2="1.2192" y2="-0.5588" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.2192" y1="-0.5588" x2="1.2192" y2="0.5588" width="0.1524" layer="21"/>
-<wire x1="-1.2192" y1="-0.5588" x2="-1.2192" y2="0.5588" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="1.016" x2="0.762" y2="1.016" width="0.1524" layer="21"/>
-<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.254" layer="1"/>
-<polygon width="0.127" layer="29">
-<vertex x="-0.1905" y="0.127"/>
-<vertex x="0.1905" y="0.127"/>
-<vertex x="0.1905" y="-0.127"/>
-<vertex x="-0.1905" y="-0.127"/>
-</polygon>
-</package>
-<package name="SMT-JUMPER_2_NC_TRACE_NO-SILK">
-<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.254" layer="1"/>
-<polygon width="0.127" layer="29">
-<vertex x="-0.1905" y="0.127"/>
-<vertex x="0.1905" y="0.127"/>
-<vertex x="0.1905" y="-0.127"/>
-<vertex x="-0.1905" y="-0.127"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="SMT-JUMPER_2_NC_TRACE">
-<wire x1="0.381" y1="0.635" x2="1.016" y2="0" width="1.27" layer="94" curve="-90" cap="flat"/>
-<wire x1="1.016" y1="0" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-90" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<wire x1="-0.762" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JUMPER-SMT_2_NC_TRACE" prefix="JP">
-<description>&lt;h3&gt;Normally closed trace jumper&lt;/h3&gt;
-&lt;p&gt;This jumper has a trace between two pads so it's normally closed (NC). Use a razor knife to open the connection. For best results follow the IPC guidelines for cutting traces:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Cutout at least 0.063 mm (0.005 in).&lt;/li&gt;
-&lt;li&gt;Remove all loose material to clean up the cut area.&lt;/li&gt;
-&lt;li&gt;Seal the cut with an approved epoxy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Reapply solder to reclose the connection.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SMT-JUMPER_2_NC_TRACE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_NO-SILK" package="SMT-JUMPER_2_NC_TRACE_NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SILK" package="SMT-JUMPER_2_NC_TRACE_SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="BME280ComponentLibrary">
 <packages>
 <package name="BME280_LGA">
@@ -7672,7 +7546,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="X4" library="microbuilder" deviceset="USB" device="_MICRO_20329_V2" value="20329"/>
 <part name="U$11" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$12" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$18" library="microbuilder" deviceset="VBUS" device=""/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$24" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="SJ1" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
@@ -7695,8 +7568,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$41" library="microbuilder" deviceset="GND" device=""/>
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0603_NO" value="1uF"/>
 <part name="U$42" library="microbuilder" deviceset="GND" device=""/>
-<part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
-<part name="U$17" library="microbuilder" deviceset="GND" device=""/>
 <part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF"/>
 <part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="0603_NO" value="1uF"/>
 <part name="U$28" library="microbuilder" deviceset="GND" device=""/>
@@ -7720,7 +7591,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$13" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="R3" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
-<part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK"/>
 <part name="U4" library="BME280ComponentLibrary" deviceset="BME280" device="" value="BMEx80"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7770,6 +7640,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$34" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$43" library="microbuilder" deviceset="GND" device=""/>
 <part name="U1" library="microbuilder" deviceset="LIGHT_TSL2591" device="" value="TSL2591"/>
+<part name="C19" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
+<part name="U$32" library="microbuilder" deviceset="GND" device=""/>
+<part name="C20" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
+<part name="U$44" library="microbuilder" deviceset="GND" device=""/>
+<part name="C21" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
+<part name="U$47" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$18" library="microbuilder" deviceset="VBUS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7877,21 +7754,21 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="S1" gate="1" x="30.48" y="226.06" rot="R180">
 <attribute name="PROD_ID" x="30.48" y="226.06" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="R1" gate="G$1" x="251.46" y="241.3" smashed="yes" rot="MR0">
-<attribute name="NAME" x="252.222" y="238.2266" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="252.984" y="240.03" size="1.778" layer="96" rot="MR180"/>
+<instance part="R1" gate="G$1" x="264.16" y="241.3" smashed="yes" rot="MR0">
+<attribute name="NAME" x="264.922" y="238.2266" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="265.684" y="240.03" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R15" gate="G$1" x="251.46" y="223.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="252.222" y="226.8474" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="255.27" y="226.822" size="1.778" layer="96" rot="R180"/>
+<instance part="R15" gate="G$1" x="264.16" y="223.52" smashed="yes" rot="R180">
+<attribute name="NAME" x="264.922" y="226.8474" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="267.97" y="226.822" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D2" gate="G$1" x="238.76" y="223.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="239.268" y="224.028" size="1.778" layer="95"/>
-<attribute name="VALUE" x="233.426" y="227.203" size="1.778" layer="96"/>
+<instance part="D2" gate="G$1" x="251.46" y="223.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="251.968" y="224.028" size="1.778" layer="95"/>
+<attribute name="VALUE" x="246.126" y="227.203" size="1.778" layer="96"/>
 </instance>
-<instance part="D5" gate="G$1" x="238.76" y="241.3" smashed="yes" rot="MR90">
-<attribute name="NAME" x="239.268" y="240.792" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="233.934" y="237.617" size="1.778" layer="96" rot="MR180"/>
+<instance part="D5" gate="G$1" x="251.46" y="241.3" smashed="yes" rot="MR90">
+<attribute name="NAME" x="251.968" y="240.792" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="246.634" y="237.617" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="U$16" gate="G$1" x="81.28" y="251.46"/>
 <instance part="U$22" gate="G$1" x="81.28" y="228.6"/>
@@ -7911,16 +7788,15 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="D3" gate="G$1" x="25.4" y="7.62"/>
 <instance part="U$14" gate="G$1" x="12.7" y="12.7"/>
 <instance part="R10" gate="G$1" x="33.02" y="7.62" rot="R180"/>
-<instance part="IC1" gate="G$1" x="198.12" y="226.06"/>
+<instance part="IC1" gate="G$1" x="210.82" y="226.06"/>
 <instance part="X4" gate="G$1" x="152.4" y="215.9"/>
 <instance part="U$11" gate="G$1" x="165.1" y="205.74"/>
-<instance part="U$12" gate="G$1" x="180.34" y="226.06"/>
-<instance part="U$18" gate="G$1" x="167.64" y="226.06"/>
-<instance part="IC1" gate="G$2" x="238.76" y="205.74"/>
-<instance part="U$1" gate="G$1" x="238.76" y="195.58"/>
-<instance part="U$24" gate="G$1" x="160.02" y="261.62"/>
+<instance part="U$12" gate="G$1" x="193.04" y="226.06"/>
+<instance part="IC1" gate="G$2" x="251.46" y="205.74"/>
+<instance part="U$1" gate="G$1" x="251.46" y="195.58"/>
+<instance part="U$24" gate="G$1" x="193.04" y="259.08"/>
 <instance part="SJ1" gate="G$1" x="208.28" y="167.64"/>
-<instance part="3.3V" gate="G$1" x="266.7" y="248.92"/>
+<instance part="3.3V" gate="G$1" x="279.4" y="248.92"/>
 <instance part="U$7" gate="G$1" x="17.78" y="228.6"/>
 <instance part="GND5" gate="1" x="81.28" y="5.08"/>
 <instance part="S2" gate="G$1" x="91.44" y="10.16"/>
@@ -7939,8 +7815,6 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="U$41" gate="G$1" x="109.22" y="180.34"/>
 <instance part="C4" gate="G$1" x="129.54" y="223.52"/>
 <instance part="U$42" gate="G$1" x="129.54" y="218.44"/>
-<instance part="C5" gate="G$1" x="175.26" y="233.68"/>
-<instance part="U$17" gate="G$1" x="175.26" y="226.06"/>
 <instance part="C6" gate="G$1" x="17.78" y="236.22"/>
 <instance part="C7" gate="G$1" x="66.04" y="233.68"/>
 <instance part="U$28" gate="G$1" x="66.04" y="228.6"/>
@@ -7964,7 +7838,6 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="U$13" gate="G$1" x="7.62" y="116.84"/>
 <instance part="R3" gate="G$1" x="101.6" y="162.56"/>
 <instance part="R9" gate="G$1" x="101.6" y="144.78"/>
-<instance part="JP3" gate="G$1" x="160.02" y="246.38" rot="R90"/>
 <instance part="C10" gate="G$1" x="78.74" y="114.3" rot="R270"/>
 <instance part="C11" gate="G$1" x="86.36" y="104.14"/>
 <instance part="GND2" gate="1" x="132.08" y="55.88"/>
@@ -8017,6 +7890,13 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="R17" gate="G$1" x="297.18" y="111.76" rot="R90"/>
 <instance part="SUPPLY5" gate="G$1" x="297.18" y="121.92"/>
 <instance part="GND10" gate="1" x="297.18" y="81.28"/>
+<instance part="C19" gate="G$1" x="187.96" y="203.2"/>
+<instance part="U$32" gate="G$1" x="187.96" y="195.58"/>
+<instance part="C20" gate="G$1" x="185.42" y="233.68"/>
+<instance part="U$44" gate="G$1" x="185.42" y="226.06"/>
+<instance part="C21" gate="G$1" x="177.8" y="233.68"/>
+<instance part="U$47" gate="G$1" x="177.8" y="226.06"/>
+<instance part="U$18" gate="G$1" x="167.64" y="259.08"/>
 </instances>
 <busses>
 </busses>
@@ -8055,8 +7935,8 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="U$12" gate="G$1" pin="GND"/>
-<wire x1="182.88" y1="231.14" x2="180.34" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="231.14" x2="180.34" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="231.14" x2="193.04" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="231.14" x2="193.04" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$2" pin="TP"/>
@@ -8095,11 +7975,6 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="U$42" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="U$17" gate="G$1" pin="GND"/>
-<wire x1="175.26" y1="231.14" x2="175.26" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -8238,38 +8113,53 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="SJ4" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="83.82" x2="297.18" y2="93.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="U$32" gate="G$1" pin="GND"/>
+<wire x1="187.96" y1="200.66" x2="187.96" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C21" gate="G$1" pin="2"/>
+<pinref part="U$47" gate="G$1" pin="GND"/>
+<wire x1="177.8" y1="231.14" x2="177.8" y2="228.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="U$44" gate="G$1" pin="GND"/>
+<wire x1="185.42" y1="231.14" x2="185.42" y2="228.6" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="TXLED" class="0">
 <segment>
-<wire x1="226.06" y1="233.68" x2="226.06" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="241.3" x2="233.68" y2="241.3" width="0.1524" layer="91"/>
-<label x="215.9" y="233.68" size="1.778" layer="95"/>
+<wire x1="238.76" y1="233.68" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="241.3" x2="246.38" y2="241.3" width="0.1524" layer="91"/>
+<label x="228.6" y="233.68" size="1.778" layer="95"/>
 <pinref part="D5" gate="G$1" pin="C"/>
 <pinref part="IC1" gate="G$1" pin="GPIO0/TXLED"/>
-<wire x1="213.36" y1="233.68" x2="226.06" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="233.68" x2="238.76" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RXLED" class="0">
 <segment>
-<wire x1="226.06" y1="231.14" x2="226.06" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="223.52" x2="233.68" y2="223.52" width="0.1524" layer="91"/>
-<label x="215.9" y="228.6" size="1.778" layer="95"/>
+<wire x1="238.76" y1="231.14" x2="238.76" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="223.52" x2="246.38" y2="223.52" width="0.1524" layer="91"/>
+<label x="228.6" y="228.6" size="1.778" layer="95"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="IC1" gate="G$1" pin="GPIO1/RXLED"/>
-<wire x1="213.36" y1="231.14" x2="226.06" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="231.14" x2="238.76" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="241.3" x2="241.3" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="241.3" x2="254" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="223.52" x2="241.3" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="223.52" x2="254" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -8283,15 +8173,6 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <wire x1="144.78" y1="162.56" x2="144.78" y2="167.64" width="0.1524" layer="91"/>
 <junction x="144.78" y="167.64"/>
 <pinref part="U$38" gate="G$1" pin="VBUS"/>
-</segment>
-<segment>
-<pinref part="X4" gate="G$1" pin="VBUS"/>
-<pinref part="IC1" gate="G$1" pin="VBUS"/>
-<wire x1="162.56" y1="220.98" x2="167.64" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="220.98" x2="182.88" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="U$18" gate="G$1" pin="VBUS"/>
-<wire x1="167.64" y1="220.98" x2="167.64" y2="223.52" width="0.1524" layer="91"/>
-<junction x="167.64" y="220.98"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -8311,6 +8192,27 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="U$4" gate="G$1" pin="VBUS"/>
 <wire x1="43.18" y1="104.14" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="104.14" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X4" gate="G$1" pin="VBUS"/>
+<pinref part="IC1" gate="G$1" pin="VBUS"/>
+<wire x1="162.56" y1="220.98" x2="167.64" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="U$18" gate="G$1" pin="VBUS"/>
+<wire x1="167.64" y1="220.98" x2="195.58" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="256.54" x2="167.64" y2="241.3" width="0.1524" layer="91"/>
+<junction x="167.64" y="220.98"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="241.3" x2="167.64" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="241.3" x2="185.42" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="241.3" x2="177.8" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="241.3" x2="177.8" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="REGIN"/>
+<wire x1="195.58" y1="241.3" x2="185.42" y2="241.3" width="0.1524" layer="91"/>
+<junction x="185.42" y="241.3"/>
+<wire x1="177.8" y1="241.3" x2="167.64" y2="241.3" width="0.1524" layer="91"/>
+<junction x="177.8" y="241.3"/>
+<junction x="167.64" y="241.3"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -8380,13 +8282,13 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 </segment>
 <segment>
 <pinref part="3.3V" gate="G$1" pin="VBUS"/>
-<wire x1="266.7" y1="246.38" x2="266.7" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="246.38" x2="279.4" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="266.7" y1="241.3" x2="266.7" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="223.52" x2="266.7" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="241.3" x2="279.4" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="223.52" x2="279.4" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="256.54" y1="241.3" x2="266.7" y2="241.3" width="0.1524" layer="91"/>
-<junction x="266.7" y="241.3"/>
+<wire x1="269.24" y1="241.3" x2="279.4" y2="241.3" width="0.1524" layer="91"/>
+<junction x="279.4" y="241.3"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="1"/>
@@ -8416,11 +8318,6 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="U$6" gate="G$1" pin="3.3V"/>
 <wire x1="91.44" y1="243.84" x2="91.44" y2="248.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$24" gate="G$1" pin="3.3V"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="259.08" x2="160.02" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
@@ -8495,6 +8392,12 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
 <wire x1="297.18" y1="116.84" x2="297.18" y2="121.92" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$24" gate="G$1" pin="3.3V"/>
+<pinref part="IC1" gate="G$1" pin="VIO"/>
+<wire x1="193.04" y1="256.54" x2="193.04" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="246.38" x2="195.58" y2="246.38" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -8554,21 +8457,21 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <segment>
 <pinref part="X4" gate="G$1" pin="D+"/>
 <pinref part="IC1" gate="G$1" pin="D+"/>
-<wire x1="162.56" y1="218.44" x2="182.88" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="218.44" x2="195.58" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USBD_N" class="1">
 <segment>
 <pinref part="X4" gate="G$1" pin="D-"/>
 <pinref part="IC1" gate="G$1" pin="D-"/>
-<wire x1="162.56" y1="215.9" x2="182.88" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="215.9" x2="195.58" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RTS" class="0">
 <segment>
-<wire x1="226.06" y1="205.74" x2="213.36" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="205.74" x2="226.06" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="RTS"/>
-<label x="215.9" y="205.74" size="1.778" layer="95"/>
+<label x="228.6" y="205.74" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="116.84" y1="149.86" x2="116.84" y2="152.4" width="0.1524" layer="91"/>
@@ -8587,8 +8490,8 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <net name="DTR" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DTR"/>
-<wire x1="213.36" y1="215.9" x2="226.06" y2="215.9" width="0.1524" layer="91"/>
-<label x="215.9" y="215.9" size="1.778" layer="95"/>
+<wire x1="226.06" y1="215.9" x2="238.76" y2="215.9" width="0.1524" layer="91"/>
+<label x="228.6" y="215.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="116.84" y1="157.48" x2="116.84" y2="154.94" width="0.1524" layer="91"/>
@@ -8630,9 +8533,9 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="X2" gate="G$1" pin="RXD0"/>
 </segment>
 <segment>
-<wire x1="213.36" y1="210.82" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="210.82" x2="238.76" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="TXD"/>
-<label x="215.9" y="210.82" size="1.778" layer="95"/>
+<label x="228.6" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD0" class="0">
@@ -8642,9 +8545,9 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="X2" gate="G$1" pin="TXD0"/>
 </segment>
 <segment>
-<wire x1="226.06" y1="208.28" x2="213.36" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="208.28" x2="226.06" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="RXD"/>
-<label x="215.9" y="208.28" size="1.778" layer="95"/>
+<label x="228.6" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -9052,24 +8955,6 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <wire x1="25.4" y1="228.6" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="REGIN"/>
-<wire x1="160.02" y1="241.3" x2="175.26" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="241.3" x2="182.88" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="238.76" x2="175.26" y2="241.3" width="0.1524" layer="91"/>
-<junction x="175.26" y="241.3"/>
-<pinref part="IC1" gate="G$1" pin="VIO"/>
-<wire x1="182.88" y1="246.38" x2="175.26" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="246.38" x2="175.26" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
-<wire x1="175.26" y1="243.84" x2="175.26" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="243.84" x2="175.26" y2="243.84" width="0.1524" layer="91"/>
-<junction x="175.26" y="243.84"/>
-</segment>
-</net>
 <net name="VGL" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
@@ -9213,6 +9098,14 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="SJ4" gate="G$1" pin="3"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="104.14" x2="297.18" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="210.82" x2="187.96" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VPP"/>
+<wire x1="187.96" y1="210.82" x2="195.58" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
