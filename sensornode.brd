@@ -154,10 +154,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="113.03" y1="0" x2="113.03" y2="61" width="0.1524" layer="20"/>
-<wire x1="113.03" y1="61" x2="0" y2="61" width="0.1524" layer="20"/>
+<wire x1="112.3" y1="0" x2="112.3" y2="61" width="0.1524" layer="20"/>
+<wire x1="112.3" y1="61" x2="0" y2="61" width="0.1524" layer="20"/>
 <wire x1="0" y1="61" x2="0" y2="0" width="0.1524" layer="20"/>
-<wire x1="0" y1="0" x2="113.03" y2="0" width="0.1524" layer="20"/>
+<wire x1="0" y1="0" x2="112.3" y2="0" width="0.1524" layer="20"/>
 <text x="17.93875" y="48.73625" size="0.3048" layer="21">TX LED</text>
 <text x="15.875" y="48.895" size="0.3048" layer="21">RX LED</text>
 <text x="107.79125" y="11.51" size="0.6096" layer="21" rot="R180">BME680
