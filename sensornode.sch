@@ -7041,7 +7041,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$34" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$43" library="microbuilder" deviceset="GND" device=""/>
 <part name="U1" library="microbuilder" deviceset="LIGHT_TSL2591" device="" value="TSL2591"/>
-<part name="C19" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
+<part name="C19" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="4.7uF"/>
 <part name="U$32" library="microbuilder" deviceset="GND" device=""/>
 <part name="C20" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
 <part name="U$44" library="microbuilder" deviceset="GND" device=""/>
