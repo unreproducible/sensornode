@@ -7210,10 +7210,10 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="U$26" gate="G$1" x="43.18" y="208.28"/>
 <instance part="U$37" gate="G$1" x="43.18" y="134.62"/>
 <instance part="X2" gate="G$1" x="43.18" y="165.1"/>
-<instance part="R5" gate="G$1" x="109.22" y="198.12" rot="R90"/>
-<instance part="R6" gate="G$1" x="109.22" y="187.96" rot="R90"/>
-<instance part="U$40" gate="G$1" x="109.22" y="205.74"/>
-<instance part="U$41" gate="G$1" x="109.22" y="180.34"/>
+<instance part="R5" gate="G$1" x="124.46" y="198.12" rot="R90"/>
+<instance part="R6" gate="G$1" x="124.46" y="187.96" rot="R90"/>
+<instance part="U$40" gate="G$1" x="124.46" y="205.74"/>
+<instance part="U$41" gate="G$1" x="124.46" y="180.34"/>
 <instance part="C4" gate="G$1" x="129.54" y="223.52"/>
 <instance part="U$42" gate="G$1" x="129.54" y="218.44"/>
 <instance part="C6" gate="G$1" x="17.78" y="236.22"/>
@@ -7254,7 +7254,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="U$15" gate="G$1" x="160.02" y="106.68"/>
 <instance part="C14" gate="G$1" x="198.12" y="124.46" rot="R90"/>
 <instance part="U$19" gate="G$1" x="233.68" y="66.04"/>
-<instance part="U$20" gate="G$1" x="195.58" y="111.76"/>
+<instance part="U$20" gate="G$1" x="210.82" y="111.76"/>
 <instance part="C15" gate="G$1" x="203.2" y="91.44" rot="R90"/>
 <instance part="C16" gate="G$1" x="210.82" y="86.36" rot="R90"/>
 <instance part="C17" gate="G$1" x="218.44" y="81.28" rot="R90"/>
@@ -7732,12 +7732,12 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <segment>
 <pinref part="U$15" gate="G$1" pin="15-VDDIO"/>
 <pinref part="U$20" gate="G$1" pin="3.3V"/>
-<wire x1="162.56" y1="99.06" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="99.06" x2="195.58" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="99.06" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="99.06" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U$15" gate="G$1" pin="16-VCI"/>
-<wire x1="162.56" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="96.52" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
-<junction x="195.58" y="99.06"/>
+<wire x1="162.56" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="96.52" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
+<junction x="210.82" y="99.06"/>
 </segment>
 <segment>
 <pinref part="U$23" gate="G$1" pin="3.3V"/>
@@ -7989,7 +7989,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="22.86" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IO16" class="0">
+<net name="EINK_RESET_IO16" class="0">
 <segment>
 <wire x1="71.12" y1="177.8" x2="83.82" y2="177.8" width="0.1524" layer="91"/>
 <label x="73.66" y="177.8" size="1.778" layer="95"/>
@@ -8006,7 +8006,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="180.34" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IO17" class="0">
+<net name="EINK_DC_IO17" class="0">
 <segment>
 <wire x1="83.82" y1="175.26" x2="71.12" y2="175.26" width="0.1524" layer="91"/>
 <label x="73.66" y="175.26" size="1.778" layer="95"/>
@@ -8023,7 +8023,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="180.34" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MOSI" class="0">
+<net name="EINK_SCLK_MOSI" class="0">
 <segment>
 <wire x1="71.12" y1="172.72" x2="83.82" y2="172.72" width="0.1524" layer="91"/>
 <label x="73.66" y="172.72" size="1.778" layer="95"/>
@@ -8040,7 +8040,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="180.34" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A5_IO4" class="0">
+<net name="EINK_BUSY_A5_IO4" class="0">
 <segment>
 <wire x1="71.12" y1="193.04" x2="83.82" y2="193.04" width="0.1524" layer="91"/>
 <label x="73.66" y="193.04" size="1.778" layer="95"/>
@@ -8057,7 +8057,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="180.34" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IO23" class="0">
+<net name="EINK_MOSI_IO23" class="0">
 <segment>
 <wire x1="71.12" y1="162.56" x2="83.82" y2="162.56" width="0.1524" layer="91"/>
 <label x="73.66" y="162.56" size="1.778" layer="95"/>
@@ -8162,7 +8162,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="22.86" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SCK" class="0">
+<net name="EINK_CS_SCK" class="0">
 <segment>
 <wire x1="71.12" y1="190.5" x2="83.82" y2="190.5" width="0.1524" layer="91"/>
 <label x="73.66" y="190.5" size="1.778" layer="95"/>
@@ -8241,9 +8241,9 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="193.04" x2="96.52" y2="193.04" width="0.1524" layer="91"/>
-<junction x="109.22" y="193.04"/>
-<label x="96.52" y="193.04" size="1.778" layer="95"/>
+<wire x1="124.46" y1="193.04" x2="111.76" y2="193.04" width="0.1524" layer="91"/>
+<junction x="124.46" y="193.04"/>
+<label x="111.76" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IO12_A11" class="0">
@@ -8356,7 +8356,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <wire x1="25.4" y1="228.6" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VGL" class="0">
+<net name="EINK_VGL" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="101.6" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
@@ -8384,7 +8384,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <junction x="104.14" y="99.06"/>
 </segment>
 </net>
-<net name="VGH" class="0">
+<net name="EINK_VGH" class="0">
 <segment>
 <pinref part="D7" gate="G$1" pin="C"/>
 <wire x1="91.44" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
@@ -8403,7 +8403,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="180.34" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GDR" class="0">
+<net name="EINK_GDR" class="0">
 <segment>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="99.06" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
@@ -8415,7 +8415,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="180.34" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RESE" class="0">
+<net name="EINK_RESE" class="0">
 <segment>
 <pinref part="Q4" gate="G$1" pin="S"/>
 <wire x1="104.14" y1="66.04" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
