@@ -6402,6 +6402,38 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
 <rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 </package>
+<package name="MICROSD">
+<wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
+<wire x1="14" y1="-15.14" x2="14" y2="-0.04" width="0.127" layer="21"/>
+<wire x1="14" y1="-0.04" x2="0" y2="-0.04" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.04" x2="0" y2="-14.44" width="0.127" layer="21"/>
+<wire x1="0" y1="-14.44" x2="1" y2="-14.44" width="0.127" layer="21"/>
+<wire x1="1" y1="-14.44" x2="1.7" y2="-13.54" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.7" y1="-13.54" x2="11.4" y2="-13.54" width="0.127" layer="21"/>
+<wire x1="11.4" y1="-13.54" x2="13" y2="-15.14" width="0.127" layer="21" curve="-90"/>
+<wire x1="0.4" y1="-14.7" x2="1.6" y2="-15.9" width="0.127" layer="21" curve="90"/>
+<wire x1="1.6" y1="-15.9" x2="10.8" y2="-15.9" width="0.127" layer="21"/>
+<wire x1="10.8" y1="-15.9" x2="12.1" y2="-14.8" width="0.127" layer="21" curve="90"/>
+<wire x1="0.4" y1="-15.6" x2="1.6" y2="-16.8" width="0.127" layer="21" curve="90"/>
+<wire x1="1.6" y1="-16.8" x2="10.8" y2="-16.8" width="0.127" layer="21"/>
+<wire x1="10.8" y1="-16.8" x2="12.1" y2="-15.7" width="0.127" layer="21" curve="90"/>
+<wire x1="0.4" y1="-19.4" x2="1.6" y2="-20.6" width="0.127" layer="21" curve="90"/>
+<wire x1="1.6" y1="-20.6" x2="10.8" y2="-20.6" width="0.127" layer="21"/>
+<wire x1="10.8" y1="-20.6" x2="12.1" y2="-19.5" width="0.127" layer="21" curve="90"/>
+<smd name="MT1" x="0.4" y="-13.54" dx="1.4" dy="1.9" layer="1"/>
+<smd name="MT2" x="13.6" y="-14.44" dx="1.4" dy="1.9" layer="1"/>
+<smd name="CD1" x="2" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
+<smd name="CD2" x="8" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
+<smd name="8" x="1.3" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="7" x="2.4" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="6" x="3.5" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
+<smd name="5" x="4.6" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="4" x="5.7" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
+<smd name="3" x="6.8" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="2" x="7.9" y="-10.24" dx="0.7" dy="1.5" layer="1"/>
+<smd name="1" x="9" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<text x="3.7" y="-3.94" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MOSFET-N">
@@ -6444,6 +6476,31 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="2.032" y="-0.762"/>
 </polygon>
 </symbol>
+<symbol name="TRANSFLASH">
+<wire x1="-15.24" y1="20.32" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-22.86" x2="-5.08" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-22.86" x2="-2.54" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-25.4" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="2.54" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-22.86" x2="2.54" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-25.4" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
+<text x="-7.62" y="-10.16" size="2.1844" layer="94">SD &amp; MMC</text>
+<pin name="CS" x="-17.78" y="0" length="short" direction="in"/>
+<pin name="DATA_IN" x="-17.78" y="5.08" length="short" direction="in"/>
+<pin name="VSS" x="-17.78" y="-12.7" length="short" direction="sup"/>
+<pin name="VDD" x="-17.78" y="-10.16" length="short" direction="sup"/>
+<pin name="SCLK" x="-17.78" y="2.54" length="short" direction="in"/>
+<pin name="DATA_OUT" x="-17.78" y="7.62" length="short" direction="out"/>
+<pin name="DAT1" x="-17.78" y="-2.54" length="short"/>
+<pin name="DAT2" x="-17.78" y="-5.08" length="short"/>
+<pin name="CARD_DETECT" x="-17.78" y="17.78" length="short" direction="pas"/>
+<pin name="GND" x="-17.78" y="-20.32" length="short" direction="sup"/>
+<pin name="GND1" x="-17.78" y="-17.78" length="short" direction="sup"/>
+<pin name="CARD_DETECT1" x="-17.78" y="15.24" length="short" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MOSFET-N" prefix="Q" uservalue="yes">
@@ -6481,6 +6538,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="D" pad="2"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICROSD">
+<description>&lt;b&gt;Micro-SD / Transflash card holder with SPI pinout&lt;/b&gt;
+&lt;p&gt;
+For the 3M # 2908-05WB-MG and/or 4UCON #19656&lt;br&gt;
+push-push type</description>
+<gates>
+<gate name="G$1" symbol="TRANSFLASH" x="5.08" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="MICROSD">
+<connects>
+<connect gate="G$1" pin="CARD_DETECT" pad="CD1"/>
+<connect gate="G$1" pin="CARD_DETECT1" pad="CD2"/>
+<connect gate="G$1" pin="CS" pad="2"/>
+<connect gate="G$1" pin="DAT1" pad="8"/>
+<connect gate="G$1" pin="DAT2" pad="1"/>
+<connect gate="G$1" pin="DATA_IN" pad="3"/>
+<connect gate="G$1" pin="DATA_OUT" pad="7"/>
+<connect gate="G$1" pin="GND" pad="MT1"/>
+<connect gate="G$1" pin="GND1" pad="MT2"/>
+<connect gate="G$1" pin="SCLK" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7048,6 +7135,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C21" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
 <part name="U$47" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$18" library="microbuilder" deviceset="VBUS" device=""/>
+<part name="U$17" library="adafruit" deviceset="MICROSD" device=""/>
+<part name="U$31" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$45" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7119,9 +7209,11 @@ GPIO39/ADCH/ADC1_3/SensVN</text>
 <wire x1="71.12" y1="27.94" x2="71.12" y2="50.8" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="71.12" y1="50.8" x2="71.12" y2="124.46" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="251.46" y1="187.96" x2="284.48" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="251.46" y1="50.8" x2="251.46" y2="144.78" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="251.46" y1="63.5" x2="251.46" y2="144.78" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="251.46" y1="144.78" x2="251.46" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="251.46" y1="50.8" x2="198.12" y2="50.8" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="251.46" y1="63.5" x2="236.22" y2="63.5" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="236.22" y1="63.5" x2="236.22" y2="50.8" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="236.22" y1="50.8" x2="198.12" y2="50.8" width="0.1524" layer="94" style="shortdash"/>
 <text x="50.8" y="208.28" size="1.778" layer="94">ESP3212 MODULE + AUTORESET</text>
 <text x="5.08" y="200.66" size="1.778" layer="91">NC: IO0,IO2
 VBAT SENSE: IO35
@@ -7144,7 +7236,7 @@ of the I2C address--can be:
   0x1110110
   0x1110111
   Open for SPI 3-wire mode</text>
-<text x="289.56" y="147.32" size="1.778" layer="97">BME280 - Temp, Humidity
+<text x="289.56" y="147.32" size="1.778" layer="97">BME280 - Temp, Humidity, Pressure
 BME680 - Temp, Humidity, Pressure, Particle</text>
 <wire x1="284.48" y1="71.12" x2="284.48" y2="162.56" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="401.32" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="94" style="shortdash"/>
@@ -7298,6 +7390,9 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="C21" gate="G$1" x="177.8" y="233.68"/>
 <instance part="U$47" gate="G$1" x="177.8" y="226.06"/>
 <instance part="U$18" gate="G$1" x="167.64" y="259.08"/>
+<instance part="U$17" gate="G$1" x="248.92" y="35.56" rot="R180"/>
+<instance part="U$31" gate="G$1" x="292.1" y="5.08"/>
+<instance part="U$45" gate="G$1" x="276.86" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -7528,6 +7623,20 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="C20" gate="G$1" pin="2"/>
 <pinref part="U$44" gate="G$1" pin="GND"/>
 <wire x1="185.42" y1="231.14" x2="185.42" y2="228.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$17" gate="G$1" pin="GND"/>
+<wire x1="266.7" y1="55.88" x2="292.1" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="55.88" x2="292.1" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$31" gate="G$1" pin="GND"/>
+<pinref part="U$17" gate="G$1" pin="GND1"/>
+<wire x1="292.1" y1="53.34" x2="292.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="48.26" x2="292.1" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="53.34" x2="292.1" y2="53.34" width="0.1524" layer="91"/>
+<junction x="292.1" y="53.34"/>
+<pinref part="U$17" gate="G$1" pin="VSS"/>
+<wire x1="266.7" y1="48.26" x2="292.1" y2="48.26" width="0.1524" layer="91"/>
+<junction x="292.1" y="48.26"/>
 </segment>
 </net>
 <net name="TXLED" class="0">
@@ -7798,6 +7907,12 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="IC1" gate="G$1" pin="VIO"/>
 <wire x1="193.04" y1="256.54" x2="193.04" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="246.38" x2="195.58" y2="246.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$17" gate="G$1" pin="VDD"/>
+<pinref part="U$45" gate="G$1" pin="3.3V"/>
+<wire x1="266.7" y1="45.72" x2="276.86" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="45.72" x2="276.86" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -8203,7 +8318,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="22.86" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IO13_A12" class="0">
+<net name="HSPI_MOSI-IO13_A12" class="0">
 <segment>
 <wire x1="71.12" y1="185.42" x2="83.82" y2="185.42" width="0.1524" layer="91"/>
 <label x="73.66" y="185.42" size="1.778" layer="95"/>
@@ -8215,9 +8330,9 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="22.86" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="10.16" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
-<label x="101.6" y="10.16" size="1.778" layer="95"/>
-<pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="U$17" gate="G$1" pin="DATA_IN"/>
+<wire x1="266.7" y1="30.48" x2="287.02" y2="30.48" width="0.1524" layer="91"/>
+<label x="276.86" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A2_I34" class="0">
@@ -8246,7 +8361,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="111.76" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IO12_A11" class="0">
+<net name="HSPI_MISO-IO12_A11" class="0">
 <segment>
 <wire x1="71.12" y1="187.96" x2="83.82" y2="187.96" width="0.1524" layer="91"/>
 <label x="73.66" y="187.96" size="1.778" layer="95"/>
@@ -8257,8 +8372,13 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <wire x1="43.18" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
 <label x="22.86" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$17" gate="G$1" pin="DATA_OUT"/>
+<wire x1="266.7" y1="27.94" x2="287.02" y2="27.94" width="0.1524" layer="91"/>
+<label x="276.86" y="27.94" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="IO15_A8" class="0">
+<net name="HSPI_CS0-IO15_A8" class="0">
 <segment>
 <wire x1="71.12" y1="180.34" x2="83.82" y2="180.34" width="0.1524" layer="91"/>
 <label x="73.66" y="180.34" size="1.778" layer="95"/>
@@ -8268,6 +8388,11 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="JP2" gate="G$1" pin="10"/>
 <wire x1="43.18" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
 <label x="22.86" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$17" gate="G$1" pin="CS"/>
+<wire x1="266.7" y1="35.56" x2="287.02" y2="35.56" width="0.1524" layer="91"/>
+<label x="276.86" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -8300,7 +8425,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <junction x="365.76" y="104.14"/>
 </segment>
 </net>
-<net name="IO14_A6" class="0">
+<net name="HSPI_SCLK-IO14_A6" class="0">
 <segment>
 <wire x1="71.12" y1="182.88" x2="83.82" y2="182.88" width="0.1524" layer="91"/>
 <label x="73.66" y="182.88" size="1.778" layer="95"/>
@@ -8312,9 +8437,9 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="22.86" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="S4" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
-<label x="101.6" y="25.4" size="1.778" layer="95"/>
+<pinref part="U$17" gate="G$1" pin="SCLK"/>
+<wire x1="266.7" y1="33.02" x2="287.02" y2="33.02" width="0.1524" layer="91"/>
+<label x="276.86" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -8507,6 +8632,20 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <wire x1="187.96" y1="210.82" x2="187.96" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VPP"/>
 <wire x1="187.96" y1="210.82" x2="195.58" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="S4" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
+<label x="101.6" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="10.16" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
+<label x="101.6" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
