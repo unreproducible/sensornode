@@ -8023,7 +8023,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="GPIO2" class="0">
+<net name="BTN-GPIO2" class="0">
 <segment>
 <wire x1="71.12" y1="195.58" x2="83.82" y2="195.58" width="0.1524" layer="91"/>
 <label x="73.66" y="195.58" size="1.778" layer="95"/>
@@ -8219,7 +8219,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <junction x="375.92" y="99.06"/>
 </segment>
 </net>
-<net name="IO33_A9" class="0">
+<net name="BTN-IO33_A9" class="0">
 <segment>
 <wire x1="71.12" y1="149.86" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
 <label x="73.66" y="149.86" size="1.778" layer="95"/>
@@ -8236,7 +8236,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="101.6" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IO32_A7" class="0">
+<net name="BTN-IO32_A7" class="0">
 <segment>
 <wire x1="71.12" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
 <label x="73.66" y="152.4" size="1.778" layer="95"/>
@@ -8253,7 +8253,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="101.6" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IO27_A10" class="0">
+<net name="BTN-IO27_A10" class="0">
 <segment>
 <wire x1="71.12" y1="154.94" x2="83.82" y2="154.94" width="0.1524" layer="91"/>
 <label x="73.66" y="154.94" size="1.778" layer="95"/>
@@ -8263,6 +8263,11 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="JP2" gate="G$1" pin="26"/>
 <wire x1="43.18" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
 <label x="22.86" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="S2" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="10.16" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
+<label x="101.6" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -8335,7 +8340,7 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <label x="276.86" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A2_I34" class="0">
+<net name="BTN-A2_I34" class="0">
 <segment>
 <wire x1="71.12" y1="147.32" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
 <label x="73.66" y="147.32" size="1.778" layer="95"/>
@@ -8346,8 +8351,13 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <wire x1="43.18" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
 <label x="22.86" y="58.42" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="S4" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
+<label x="101.6" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="A13_I35" class="0">
+<net name="BATSEN-A13_I35" class="0">
 <segment>
 <wire x1="71.12" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 <label x="73.66" y="144.78" size="1.778" layer="95"/>
@@ -8632,20 +8642,6 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <wire x1="187.96" y1="210.82" x2="187.96" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VPP"/>
 <wire x1="187.96" y1="210.82" x2="195.58" y2="210.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="S4" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
-<label x="101.6" y="25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="S2" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="10.16" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
-<label x="101.6" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
