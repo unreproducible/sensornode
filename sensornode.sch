@@ -6579,80 +6579,31 @@ push-push type</description>
 </library>
 <library name="Warthog9-Screens">
 <packages>
-<package name="WAVSHARE-BUYDISPLAY-2.13">
-<smd name="1-NC1" x="15.6972" y="12.7254" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="2-GDR" x="15.6972" y="12.2428" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="3-RESE" x="15.6972" y="11.7348" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="4-VGL" x="15.6972" y="11.2268" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="5-VGH" x="15.6972" y="10.7442" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="6-TSCL" x="15.6972" y="10.2362" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="7-TSDA" x="15.6972" y="9.7282" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="8-BS1" x="15.6972" y="9.2456" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="9-BUSY" x="15.6972" y="8.7376" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="10-RES#" x="15.6972" y="8.2296" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="11-D/C#" x="15.6972" y="7.747" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="12-CS#" x="15.6972" y="7.239" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="13-D0" x="15.6972" y="6.731" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="14-D1" x="15.6972" y="6.223" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="15-VDDIO" x="15.6972" y="5.7404" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="16-VCI" x="15.6972" y="5.2324" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="17-GND" x="15.6972" y="4.7244" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="18-VDD" x="15.6972" y="4.2418" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="19-VPP" x="15.6972" y="3.7338" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="20-VSH" x="15.6972" y="3.2258" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="21-PREVGH" x="15.6972" y="2.7432" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="22-VSL" x="15.6972" y="2.2352" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="23-PREVGL" x="15.6972" y="1.7272" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="24-VCOM" x="15.6972" y="1.2446" dx="1.397" dy="0.3048" layer="1"/>
-<smd name="25" x="14.4272" y="-0.5334" dx="2.6416" dy="2.3114" layer="1" rot="R90"/>
-<smd name="26" x="14.4272" y="14.5034" dx="2.6416" dy="2.3114" layer="1" rot="R90"/>
-<wire x1="16.7132" y1="12.8524" x2="16.9672" y2="12.7254" width="0.1524" layer="21"/>
-<wire x1="16.7132" y1="12.6238" x2="16.9672" y2="12.7254" width="0.1524" layer="21"/>
-<wire x1="12.954" y1="15.7226" x2="11.4808" y2="15.7226" width="0.1524" layer="21"/>
-<wire x1="11.4808" y1="15.7226" x2="11.4808" y2="-1.7526" width="0.1524" layer="21"/>
-<wire x1="11.4808" y1="-1.7526" x2="12.954" y2="-1.7526" width="0.1524" layer="21"/>
-<wire x1="15.6972" y1="13.3604" x2="16.9672" y2="12.7254" width="0.1524" layer="51"/>
-<wire x1="15.6972" y1="12.0904" x2="16.9672" y2="12.7254" width="0.1524" layer="51"/>
-<wire x1="15.6972" y1="-1.7526" x2="15.6972" y2="15.7226" width="0.1524" layer="51"/>
-<wire x1="15.6972" y1="15.7226" x2="11.4808" y2="15.7226" width="0.1524" layer="51"/>
-<wire x1="11.4808" y1="15.7226" x2="11.4808" y2="-1.7526" width="0.1524" layer="51"/>
-<wire x1="11.4808" y1="-1.7526" x2="15.6972" y2="-1.7526" width="0.1524" layer="51"/>
-<text x="-75.9206" y="20.3708" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-76.708" y="-9.3726" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-<wire x1="14.1808" y1="14.135" x2="14.1808" y2="-0.165" width="0.127" layer="21"/>
-<wire x1="-0.1192" y1="14.135" x2="14.1808" y2="14.135" width="0.127" layer="21"/>
-<wire x1="-0.1192" y1="-0.165" x2="14.1808" y2="-0.165" width="0.127" layer="21"/>
-<wire x1="-0.1192" y1="-0.165" x2="-0.1192" y2="-8.315" width="0.127" layer="21"/>
-<wire x1="-0.1192" y1="14.135" x2="-0.1192" y2="20.885" width="0.127" layer="21"/>
-<wire x1="-0.1192" y1="-8.315" x2="-59.20469375" y2="-8.315" width="0.127" layer="21"/>
-<wire x1="-0.1192" y1="20.885" x2="-59.20469375" y2="20.885" width="0.127" layer="21"/>
-<wire x1="-59.20469375" y1="20.885" x2="-59.20469375" y2="-8.315" width="0.127" layer="21"/>
-</package>
 <package name="WAVSHARE-BUYDISPLAY-2.13-THM">
-<smd name="1-NC1" x="-4.2672" y="12.7254" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="2-GDR" x="-4.2672" y="12.2428" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="3-RESE" x="-4.2672" y="11.7348" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="4-VGL" x="-4.2672" y="11.2268" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="5-VGH" x="-4.2672" y="10.7442" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="6-TSCL" x="-4.2672" y="10.2362" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="7-TSDA" x="-4.2672" y="9.7282" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="8-BS1" x="-4.2672" y="9.2456" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="9-BUSY" x="-4.2672" y="8.7376" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="10-RES#" x="-4.2672" y="8.2296" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="11-D/C#" x="-4.2672" y="7.747" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="12-CS#" x="-4.2672" y="7.239" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="13-D0" x="-4.2672" y="6.731" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="14-D1" x="-4.2672" y="6.223" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="15-VDDIO" x="-4.2672" y="5.7404" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="16-VCI" x="-4.2672" y="5.2324" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="17-GND" x="-4.2672" y="4.7244" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="18-VDD" x="-4.2672" y="4.2418" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="19-VPP" x="-4.2672" y="3.7338" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="20-VSH" x="-4.2672" y="3.2258" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="21-PREVGH" x="-4.2672" y="2.7432" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="22-VSL" x="-4.2672" y="2.2352" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="23-PREVGL" x="-4.2672" y="1.7272" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
-<smd name="24-VCOM" x="-4.2672" y="1.2446" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="24-VCOM" x="-4.2672" y="12.7254" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="23-PREVGL" x="-4.2672" y="12.2428" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="22-VSL" x="-4.2672" y="11.7348" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="21-PREVGH" x="-4.2672" y="11.2268" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="20-VSH" x="-4.2672" y="10.7442" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="19-VPP" x="-4.2672" y="10.2362" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="18-VDD" x="-4.2672" y="9.7282" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="17-GND" x="-4.2672" y="9.2456" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="16-VCI" x="-4.2672" y="8.7376" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="15-VDDIO" x="-4.2672" y="8.2296" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="14-DI" x="-4.2672" y="7.747" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="13-DO" x="-4.2672" y="7.239" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="12-CS#" x="-4.2672" y="6.731" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="11-D/C#" x="-4.2672" y="6.223" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="10-RES#" x="-4.2672" y="5.7404" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="9-BUSY" x="-4.2672" y="5.2324" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="8-BS1" x="-4.2672" y="4.7244" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="7-TSDA" x="-4.2672" y="4.2418" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="6-TSCL" x="-4.2672" y="3.7338" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="5-VGH" x="-4.2672" y="3.2258" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="4-VGL" x="-4.2672" y="2.7432" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="3-RESE" x="-4.2672" y="2.2352" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="2-GDR" x="-4.2672" y="1.7272" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
+<smd name="1-NC1" x="-4.2672" y="1.2446" dx="1.397" dy="0.3048" layer="16" rot="R180"/>
 <smd name="25" x="-2.9972" y="-0.5334" dx="2.6416" dy="2.3114" layer="16" rot="R90"/>
 <smd name="26" x="-2.9972" y="14.5034" dx="2.6416" dy="2.3114" layer="16" rot="R90"/>
 <wire x1="-5.2832" y1="12.8524" x2="-5.5372" y2="12.7254" width="0.1524" layer="22"/>
@@ -6737,6 +6688,55 @@ push-push type</description>
 <text x="-57.15" y="-6.35" size="1.27" layer="21" rot="R90">2.13</text>
 <text x="-78.105" y="-10.795" size="1.27" layer="21" rot="R90">2.9</text>
 </package>
+<package name="WAVSHARE-BUYDISPLAY-2.13">
+<smd name="24-VCOM" x="15.6972" y="12.7254" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="23-PREVGL" x="15.6972" y="12.2428" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="22-VSL" x="15.6972" y="11.7348" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="21-PREVGH" x="15.6972" y="11.2268" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="20-VSH" x="15.6972" y="10.7442" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="19-VPP" x="15.6972" y="10.2362" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="18-VDD" x="15.6972" y="9.7282" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="17-GND" x="15.6972" y="9.2456" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="16-VCI" x="15.6972" y="8.7376" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="15-VDDIO" x="15.6972" y="8.2296" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="14-DI" x="15.6972" y="7.747" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="13-DO" x="15.6972" y="7.239" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="12-CS#" x="15.6972" y="6.731" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="11-D/C#" x="15.6972" y="6.223" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="10-RES#" x="15.6972" y="5.7404" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="9-BUSY" x="15.6972" y="5.2324" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="8-BS1" x="15.6972" y="4.7244" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="7-TSDA" x="15.6972" y="4.2418" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="6-TSCL" x="15.6972" y="3.7338" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="5-VGH" x="15.6972" y="3.2258" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="4-VGL" x="15.6972" y="2.7432" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="3-RESE" x="15.6972" y="2.2352" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="2-GDR" x="15.6972" y="1.7272" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="1-NC1" x="15.6972" y="1.2446" dx="1.397" dy="0.3048" layer="1"/>
+<smd name="25" x="14.4272" y="-0.5334" dx="2.6416" dy="2.3114" layer="1" rot="R90"/>
+<smd name="26" x="14.4272" y="14.5034" dx="2.6416" dy="2.3114" layer="1" rot="R90"/>
+<wire x1="16.7132" y1="12.8524" x2="16.9672" y2="12.7254" width="0.1524" layer="21"/>
+<wire x1="16.7132" y1="12.6238" x2="16.9672" y2="12.7254" width="0.1524" layer="21"/>
+<wire x1="12.954" y1="15.7226" x2="11.4808" y2="15.7226" width="0.1524" layer="21"/>
+<wire x1="11.4808" y1="15.7226" x2="11.4808" y2="-1.7526" width="0.1524" layer="21"/>
+<wire x1="11.4808" y1="-1.7526" x2="12.954" y2="-1.7526" width="0.1524" layer="21"/>
+<wire x1="15.6972" y1="13.3604" x2="16.9672" y2="12.7254" width="0.1524" layer="51"/>
+<wire x1="15.6972" y1="12.0904" x2="16.9672" y2="12.7254" width="0.1524" layer="51"/>
+<wire x1="15.6972" y1="-1.7526" x2="15.6972" y2="15.7226" width="0.1524" layer="51"/>
+<wire x1="15.6972" y1="15.7226" x2="11.4808" y2="15.7226" width="0.1524" layer="51"/>
+<wire x1="11.4808" y1="15.7226" x2="11.4808" y2="-1.7526" width="0.1524" layer="51"/>
+<wire x1="11.4808" y1="-1.7526" x2="15.6972" y2="-1.7526" width="0.1524" layer="51"/>
+<text x="-75.9206" y="20.3708" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-76.708" y="-9.3726" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="14.1808" y1="14.135" x2="14.1808" y2="-0.165" width="0.127" layer="21"/>
+<wire x1="-0.1192" y1="14.135" x2="14.1808" y2="14.135" width="0.127" layer="21"/>
+<wire x1="-0.1192" y1="-0.165" x2="14.1808" y2="-0.165" width="0.127" layer="21"/>
+<wire x1="-0.1192" y1="-0.165" x2="-0.1192" y2="-8.315" width="0.127" layer="21"/>
+<wire x1="-0.1192" y1="14.135" x2="-0.1192" y2="20.885" width="0.127" layer="21"/>
+<wire x1="-0.1192" y1="-8.315" x2="-59.20469375" y2="-8.315" width="0.127" layer="21"/>
+<wire x1="-0.1192" y1="20.885" x2="-59.20469375" y2="20.885" width="0.127" layer="21"/>
+<wire x1="-59.20469375" y1="20.885" x2="-59.20469375" y2="-8.315" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="WAVSHARE-BUYDISPLAY-24PIN">
@@ -6787,11 +6787,11 @@ ESP_trINKet project's setup</description>
 <connect gate="G$1" pin="10-RES#" pad="10-RES#"/>
 <connect gate="G$1" pin="11-D/C#" pad="11-D/C#"/>
 <connect gate="G$1" pin="12-CS#" pad="12-CS#"/>
-<connect gate="G$1" pin="13-SCLK" pad="13-D0"/>
-<connect gate="G$1" pin="14-MOSI" pad="14-D1"/>
+<connect gate="G$1" pin="13-SCLK" pad="13-DO"/>
+<connect gate="G$1" pin="14-MOSI" pad="14-DI"/>
 <connect gate="G$1" pin="15-VDDIO" pad="15-VDDIO"/>
 <connect gate="G$1" pin="16-VCI" pad="16-VCI"/>
-<connect gate="G$1" pin="17-VSS/GND" pad="17-GND"/>
+<connect gate="G$1" pin="17-VSS/GND" pad="17-GND 25 26"/>
 <connect gate="G$1" pin="18-VDD" pad="18-VDD"/>
 <connect gate="G$1" pin="19-VPP" pad="19-VPP"/>
 <connect gate="G$1" pin="2-GDR" pad="2-GDR"/>
@@ -6818,11 +6818,11 @@ ESP_trINKet project's setup</description>
 <connect gate="G$1" pin="10-RES#" pad="10-RES#"/>
 <connect gate="G$1" pin="11-D/C#" pad="11-D/C#"/>
 <connect gate="G$1" pin="12-CS#" pad="12-CS#"/>
-<connect gate="G$1" pin="13-SCLK" pad="13-D0"/>
-<connect gate="G$1" pin="14-MOSI" pad="14-D1"/>
+<connect gate="G$1" pin="13-SCLK" pad="13-DO"/>
+<connect gate="G$1" pin="14-MOSI" pad="14-DI"/>
 <connect gate="G$1" pin="15-VDDIO" pad="15-VDDIO"/>
 <connect gate="G$1" pin="16-VCI" pad="16-VCI"/>
-<connect gate="G$1" pin="17-VSS/GND" pad="17-GND"/>
+<connect gate="G$1" pin="17-VSS/GND" pad="17-GND 25 26"/>
 <connect gate="G$1" pin="18-VDD" pad="18-VDD"/>
 <connect gate="G$1" pin="19-VPP" pad="19-VPP"/>
 <connect gate="G$1" pin="2-GDR" pad="2-GDR"/>
@@ -6853,7 +6853,7 @@ ESP_trINKet project's setup</description>
 <connect gate="G$1" pin="14-MOSI" pad="14-D1"/>
 <connect gate="G$1" pin="15-VDDIO" pad="15-VDDIO"/>
 <connect gate="G$1" pin="16-VCI" pad="16-VCI"/>
-<connect gate="G$1" pin="17-VSS/GND" pad="17-GND"/>
+<connect gate="G$1" pin="17-VSS/GND" pad="17-GND 25 26"/>
 <connect gate="G$1" pin="18-VDD" pad="18-VDD"/>
 <connect gate="G$1" pin="19-VPP" pad="19-VPP"/>
 <connect gate="G$1" pin="2-GDR" pad="2-GDR"/>
