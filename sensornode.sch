@@ -7138,6 +7138,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$17" library="adafruit" deviceset="MICROSD" device=""/>
 <part name="U$31" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$45" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
+<part name="U$46" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7393,6 +7395,8 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="U$17" gate="G$1" x="248.92" y="35.56" rot="R180"/>
 <instance part="U$31" gate="G$1" x="292.1" y="5.08"/>
 <instance part="U$45" gate="G$1" x="276.86" y="63.5"/>
+<instance part="C5" gate="G$1" x="177.8" y="248.92"/>
+<instance part="U$46" gate="G$1" x="177.8" y="259.08" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7637,6 +7641,11 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="U$17" gate="G$1" pin="VSS"/>
 <wire x1="266.7" y1="48.26" x2="292.1" y2="48.26" width="0.1524" layer="91"/>
 <junction x="292.1" y="48.26"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="U$46" gate="G$1" pin="GND"/>
+<wire x1="177.8" y1="254" x2="177.8" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXLED" class="0">
@@ -8642,6 +8651,14 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <wire x1="187.96" y1="210.82" x2="187.96" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VPP"/>
 <wire x1="187.96" y1="210.82" x2="195.58" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="VDD"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="243.84" x2="177.8" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="243.84" x2="177.8" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
