@@ -7378,7 +7378,8 @@ GPIO39/ADCH/ADC1_3/SensVN</text>
 <wire x1="71.12" y1="27.94" x2="71.12" y2="50.8" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="71.12" y1="50.8" x2="71.12" y2="124.46" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="251.46" y1="187.96" x2="284.48" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="251.46" y1="63.5" x2="251.46" y2="144.78" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="251.46" y1="63.5" x2="251.46" y2="71.12" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="251.46" y1="71.12" x2="251.46" y2="144.78" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="251.46" y1="144.78" x2="251.46" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="251.46" y1="63.5" x2="236.22" y2="63.5" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="236.22" y1="63.5" x2="236.22" y2="50.8" width="0.1524" layer="94" style="shortdash"/>
@@ -7407,8 +7408,16 @@ of the I2C address--can be:
   Open for SPI 3-wire mode</text>
 <text x="289.56" y="147.32" size="1.778" layer="97">BME280 - Temp, Humidity, Pressure
 BME680 - Temp, Humidity, Pressure, Particle</text>
-<wire x1="284.48" y1="71.12" x2="284.48" y2="162.56" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="401.32" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="284.48" y1="71.12" x2="284.48" y2="144.78" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="284.48" y1="144.78" x2="284.48" y2="162.56" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="401.32" y1="71.12" x2="299.72" y2="71.12" width="0.1524" layer="94" style="shortdash"/>
+<text x="254" y="182.88" size="1.778" layer="94">BACKUP FTDI Port</text>
+<text x="149.86" y="139.7" size="1.778" layer="94">E-Ink Screen Connector</text>
+<wire x1="299.72" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="251.46" y1="144.78" x2="284.48" y2="144.78" width="0.1524" layer="94" style="shortdash"/>
+<text x="254" y="68.58" size="1.778" layer="94">Micro SD Card Cage</text>
+<wire x1="251.46" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="299.72" y1="22.86" x2="299.72" y2="71.12" width="0.1524" layer="94" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
