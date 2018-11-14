@@ -7509,6 +7509,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SD1" library="we-con" deviceset="SD-CARD" device="-MSD50"/>
 <part name="U$48" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$49" library="microbuilder" deviceset="GND" device=""/>
+<part name="R20" library="SparkFun-Resistors" deviceset="4.7KOHM-1/10W-1%(0603)" device="" value="10K"/>
+<part name="C22" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7776,6 +7778,8 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <instance part="SD1" gate="SD" x="208.28" y="25.4" rot="R180"/>
 <instance part="U$48" gate="G$1" x="228.6" y="40.64"/>
 <instance part="U$49" gate="G$1" x="233.68" y="25.4"/>
+<instance part="R20" gate="G$1" x="198.12" y="137.16"/>
+<instance part="C22" gate="G$1" x="205.74" y="127" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7953,6 +7957,14 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="76.2" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
 <junction x="233.68" y="76.2"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="137.16" x2="233.68" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="137.16" x2="233.68" y2="127" width="0.1524" layer="91"/>
+<junction x="233.68" y="124.46"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="127" x2="233.68" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="127" x2="233.68" y2="127" width="0.1524" layer="91"/>
+<junction x="233.68" y="127"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="-"/>
@@ -8941,8 +8953,13 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 </segment>
 <segment>
 <pinref part="U$15" gate="G$1" pin="2-GDR"/>
-<wire x1="162.56" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="132.08" x2="177.8" y2="132.08" width="0.1524" layer="91"/>
 <label x="180.34" y="132.08" size="1.778" layer="95"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="132.08" x2="177.8" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="137.16" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
+<junction x="177.8" y="132.08"/>
 </segment>
 </net>
 <net name="EINK_RESE" class="0">
@@ -9045,6 +9062,13 @@ BME680 - Temp, Humidity, Pressure, Particle</text>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="243.84" x2="177.8" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="243.84" x2="177.8" y2="246.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="4-NC2"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="127" x2="200.66" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
