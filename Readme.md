@@ -18,3 +18,8 @@ general IoT uses:
 * MicroSD card slot
 * LiPo battery support (charging and discharging)
 * CP2104 USB <-> Serial Port
+
+# Getting Started
+The following link is a presentation that was done in 2018 specifically targetting this board
+
+https://events.linuxfoundation.org/wp-content/uploads/2017/12/osseu18_-_discovering_tiny_snakes_John-Hawley.pdf
