@@ -18,6 +18,8 @@ general IoT uses:
 * MicroSD card slot
 * LiPo battery support (charging and discharging)
 * CP2104 USB <-> Serial Port
+* Working Good Display E-ink support (specifically 2.13in screens)
+    * v1.2 or later
 
 # Getting Started
 The following link is a presentation that was done in 2018 specifically targetting this board
